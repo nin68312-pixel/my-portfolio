@@ -3,100 +3,165 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Développeur Web</title>
+  <title>Portfolio | [Smiytek]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <div class="header-content">
-      <h1>Salam, ana Djihane 👋</h1>
-      <p>Développeur Web Full Stack | Passionné par les projets innovants</p>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <a href="#" class="logo">[Smiytek]</a>
+      <div class="nav-links">
+        <a href="#accueil">Accueil</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="accueil" class="hero">
+    <div class="hero-content">
+      <span class="badge">Développeur Web Full Stack</span>
+      <h1>Salam, ana <span class="highlight">[Smiytek]</span> 👋</h1>
+      <p>Je conçois et développe des applications web modernes, performantes et centrées sur l'utilisateur.</p>
+      <a href="#projets" class="btn-primary">Voir mes projets</a>
     </div>
   </header>
 
-  <main>
-    <section id="projects">
-      <h2>Mes Projets Récents</h2>
-      
-      <div class="grid">
+  <!-- Projects Section -->
+  <main id="projets" class="container">
+    <div class="section-title">
+      <h2>Mes Réalisations</h2>
+      <p>Une sélection de mes projets récents</p>
+    </div>
 
-        <!-- Projet 1: Fellah DZ -->
-        <article class="card">
-          <div class="card-image">
-            <img src="fellah-dz.png" alt="Fellah DZ - Optimisation du gain de poids">
-          </div>
-          <div class="card-content">
+    <div class="grid">
+
+      <!-- Projet 1: Fellah DZ -->
+      <article class="card">
+        <div class="card-image">
+          <img src="assets/screenshots/fellah-dz.png" alt="Fellah DZ">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
             <h3>Fellah DZ 🇩🇿</h3>
-            <p>Plateforme dédiée aux éleveurs algériens pour le suivi et l'optimisation de l'engraissement des races locales (Bovins, Ovins, Volailles).</p>
-            <div class="tags">
-              <span>HTML/CSS</span> <span>JavaScript</span> <span>Dashboard</span>
-            </div>
+            <span class="year">2024</span>
           </div>
-        </article>
+          <p>Plateforme dédiée aux éleveurs algériens pour le suivi et l'optimisation de l'engraissement des races locales.</p>
+          <div class="tags">
+            <span>HTML/CSS</span> <span>JavaScript</span> <span>Dashboard</span>
+          </div>
+          <div class="card-links">
+            <a href="#" class="link-demo">Live Demo ↗</a>
+            <a href="#" class="link-code">Code Source</a>
+          </div>
+        </div>
+      </article>
 
-        <!-- Projet 2: Plateforme Médicale -->
-        <article class="card">
-          <div class="card-image">
-            <img src="ehkili.png" alt="Plateforme de consultation médicale">
+      <!-- Projet 2: Plateforme Médicale -->
+      <article class="card">
+        <div class="card-image">
+          <img src="assets/screenshots/ehkili.png" alt="Plateforme de consultation médicale">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <h3>Consultations 💬</h3>
+            <span class="year">2024</span>
           </div>
-          <div class="card-content">
-            <h3>Plateforme de Consultations 💬</h3>
-            <p>Application web de mise en relation avec des psychologues et thérapeutes. Consultation sécurisée et anonyme par chat, voix ou vidéo.</p>
-            <div class="tags">
-              <span>React</span> <span>Node.js</span> <span>Tailwind</span>
-            </div>
+          <p>Application web de mise en relation avec des psychologues. Consultation sécurisée et anonyme par chat, voix ou vidéo.</p>
+          <div class="tags">
+            <span>React</span> <span>Node.js</span> <span>Tailwind</span>
           </div>
-        </article>
+          <div class="card-links">
+            <a href="#" class="link-demo">Live Demo ↗</a>
+            <a href="#" class="link-code">Code Source</a>
+          </div>
+        </div>
+      </article>
 
-        <!-- Projet 3: Ronex -->
-        <article class="card">
-          <div class="card-image">
-            <img src="ronex.png" alt="Ronex - Gestion de laboratoire">
-          </div>
-          <div class="card-content">
+      <!-- Projet 3: Ronex -->
+      <article class="card">
+        <div class="card-image">
+          <img src="assets/screenshots/ronex.png" alt="Ronex - Gestion de laboratoire">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
             <h3>Ronex 🧪</h3>
-            <p>Plateforme de gestion des réactifs en laboratoire. Suivi en temps réel, alertes proactives et collaboration inter-laboratoires.</p>
-            <div class="tags">
-              <span>Vue.js</span> <span>Laravel</span> <span>MySQL</span>
-            </div>
+            <span class="year">2024</span>
           </div>
-        </article>
+          <p>Plateforme de gestion des réactifs en laboratoire. Suivi en temps réel, alertes proactives et collaboration inter-laboratoires.</p>
+          <div class="tags">
+            <span>Vue.js</span> <span>Laravel</span> <span>MySQL</span>
+          </div>
+          <div class="card-links">
+            <a href="#" class="link-demo">Live Demo ↗</a>
+            <a href="#" class="link-code">Code Source</a>
+          </div>
+        </div>
+      </article>
 
-        <!-- Projet 4: Green Pulse -->
-        <article class="card">
-          <div class="card-image">
-            <img src="green-pulse.png" alt="Green Pulse - Smart Agriculture">
-          </div>
-          <div class="card-content">
+      <!-- Projet 4: Green Pulse -->
+      <article class="card">
+        <div class="card-image">
+          <img src="assets/screenshots/green-pulse.png" alt="Green Pulse - Smart Agriculture">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
             <h3>Green Pulse 🌱</h3>
-            <p>Dashboard pour l'agriculture intelligente. Suivi de l'humidité, capteurs IoT, alertes et irrigation automatisée.</p>
-            <div class="tags">
-              <span>IoT</span> <span>Chart.js</span> <span>API</span>
-            </div>
+            <span class="year">2024</span>
           </div>
-        </article>
+          <p>Dashboard pour l'agriculture intelligente. Suivi de l'humidité, capteurs IoT, alertes et irrigation automatisée.</p>
+          <div class="tags">
+            <span>IoT</span> <span>Chart.js</span> <span>API</span>
+          </div>
+          <div class="card-links">
+            <a href="#" class="link-demo">Live Demo ↗</a>
+            <a href="#" class="link-code">Code Source</a>
+          </div>
+        </div>
+      </article>
 
-        <!-- Projet 5: Consultation Juridique -->
-        <article class="card">
-          <div class="card-image">
-            <img src="legal-consult.png" alt="Consultations juridiques et psychologiques">
+      <!-- Projet 5: Consultation Juridique -->
+      <article class="card">
+        <div class="card-image">
+          <img src="assets/screenshots/legal-consult.png" alt="Consultations juridiques">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <h3>Consultations ⚖️</h3>
+            <span class="year">2024</span>
           </div>
-          <div class="card-content">
-            <h3>Consultations Juridiques ⚖️</h3>
-            <p>Plateforme de consultation juridique et psychologique pour la famille. Interface moderne et sécurisée.</p>
-            <div class="tags">
-              <span>HTML/CSS</span> <span>Bootstrap</span> <span>Auth</span>
-            </div>
+          <p>Plateforme de consultation juridique et psychologique pour la famille. Interface moderne et sécurisée.</p>
+          <div class="tags">
+            <span>HTML/CSS</span> <span>Bootstrap</span> <span>Auth</span>
           </div>
-        </article>
+          <div class="card-links">
+            <a href="#" class="link-demo">Live Demo ↗</a>
+            <a href="#" class="link-code">Code Source</a>
+          </div>
+        </div>
+      </article>
 
-      </div>
-    </section>
+    </div>
   </main>
 
-  <footer>
-    <p>© 2026- Fait avec ❤️</p>
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-content">
+      <h2>Travaillons ensemble 🚀</h2>
+      <p>N'hésitez pas à me contacter pour toute opportunité ou collaboration.</p>
+      <div class="socials">
+        <a href="mailto:email@example.com">Email</a>
+        <a href="https://github.com/[username]">GitHub</a>
+        <a href="https://linkedin.com/in/[username]">LinkedIn</a>
+      </div>
+      <p class="copyright">© 2024 [Smiytek]. Tous droits réservés.</p>
+    </div>
   </footer>
 
 </body>
